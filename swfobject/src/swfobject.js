@@ -742,6 +742,9 @@ var swfobject = function () {
 				return undefined;
 			}
 		},
+		canExpressInstall: function () {
+			return (ua.w3 && canExpressInstall());
+		},
 		showExpressInstall: function (att, par, replaceElemIdStr, callbackFn) {
 			if (ua.w3 && canExpressInstall()) {
 				showExpressInstall(att, par, replaceElemIdStr, callbackFn);
